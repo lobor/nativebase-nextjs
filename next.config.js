@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const { withNativebase } = require('@native-base/next-adapter');
 
-module.exports = nextConfig
+module.exports = withNativebase({
+  dependencies: [
+    // your plugins go here.
+  ],
+});
